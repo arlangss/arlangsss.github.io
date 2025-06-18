@@ -1,0 +1,158 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 20px;
+    padding: 0;
+    transition: background 0.3s, color 0.3s;
+}
+
+h1 {
+    text-align: center;
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+form {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+form select,
+form input,
+form button {
+    padding: 10px;
+    margin: 5px;
+    font-size: 16px;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    outline: none;
+    transition: 0.3s;
+}
+
+form button {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+form button:hover {
+    background-color: #45a049;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    font-size: 15px;
+}
+
+table, th, td {
+    border: 1px solid #ddd;
+}
+
+th, td {
+    text-align: center;
+    padding: 10px;
+}
+
+th {
+    background-color: #444;
+    color: #fff;
+}
+
+tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+.mode-switcher {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.mode-switcher button {
+    padding: 8px 12px;
+    margin: 0 5px;
+    border-radius: 20px;
+    border: none;
+    cursor: pointer;
+    font-size: 14px;
+    transition: 0.3s;
+}
+
+.mode-switcher button:hover {
+    opacity: 0.8;
+}
+
+/* 🌙 Malam Mode */
+body.malam {
+    background-color: #121212;
+    color: white;
+}
+
+body.malam table {
+    color: white;
+}
+
+body.malam th {
+    background-color: #1e1e1e;
+}
+
+body.malam tr:nth-child(even) {
+    background-color: #2b2b2b;
+}
+
+/* 😎 Kece Mode */
+body.kece {
+    background: linear-gradient(to right, #ff5f6d, #ffc371);
+    color: #222;
+}
+
+body.kece table {
+    background-color: #fff;
+}
+
+body.kece th {
+    background-color: #ff5f6d;
+    color: white;
+}
+
+body.kece tr:nth-child(even) {
+    background-color: #fff0e0;
+}
+
+/* 🧊 Cool Mode */
+body.cool {
+    background: linear-gradient(to right, #00c6ff, #0072ff);
+    color: #fff;
+}
+
+body.cool th {
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+body.cool tr:nth-child(even) {
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+/* Stok Grid Display */
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+    gap: 20px;
+    margin-top: 40px;
+}
+
+.grid-item {
+    background-color: #ffffff10;
+    padding: 20px;
+    border-radius: 12px;
+    text-align: center;
+    font-size: 18px;
+    backdrop-filter: blur(4px);
+    box-shadow: 0 0 10px rgba(0,0,0,0.2);
+}
+
+.grid-item h3 {
+    margin: 0;
+    font-size: 20px;
+}
